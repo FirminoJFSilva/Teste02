@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Avaliação_U01_M02_FS09.css">
+    <title>Avaliação</title>
+</head>
+
+<body>
+    <form action="http://192.168.2.138:8090/av01" target="_blank">
+        <th>
+            <fieldset>
+                <div>
+
+                    <center>
+                        <h1>Avaliação U01 M02 FS09</h1>
+                    </center>
+                    <center><label for="name">Primeiro Nome:</label></center>
+                    <center><input type="text" id="primeiroNome" name="primeiroNome" maxlength="10"></center>
+
+                </div><br>
+                <div>
+                    <center><label for="name">Último Nome:</label></center>
+                    <center><input type="text" id="ultimoNome" name="ultimoNome" maxlength="10"></center>
+                </div><br>
+                <div>
+                    <center><label for="cars1">Turma:</label>
+                        <select id="turma" name="turma">
+                            <option value="audi">FS09</option>
+                            <option value"fiat">FS10</option>
+                        </select>
+                    </center>
+                </div><br>
+
+                <div class="item-block">
+                    <center>
+                        <label for="email">E-mail:</label><br>
+                        <input type="email" id="email" name="email" required
+                            oninvalid="this.setCustomValidity('Informe um e-mail válido')"
+                            oninput="this.setCustomValidity('')">
+                    </center>
+                </div><br>
+
+                <div>
+                    <center><input type="submit" value="Cadastrar"></center>
+                </div>
+            </fieldset>
+        </th>
+    </form>
+</body>       
